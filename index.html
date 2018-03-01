@@ -22,8 +22,32 @@
 				<header class="major">
 					<h2>Learning Experience</h2>
 				</header>
-				<p>Jinan Foreign Language School (Secondary School)<br>2010.9 - 2016.6</p>
-				<p>Hong Kong Baptist University<br>Major in Data and Media Communication<br>2016.9 - 2020.5</p>
+<!-- 				<p id="experiences">Jinan Foreign Language School (Secondary School)<br>2010.9 - 2016.6</p>
+				<p>Hong Kong Baptist University<br>Major in Data and Media Communication<br>2016.9 - 2020.5</p> -->
+
+				<p id="experiences"></p>
+				<script>
+					experiences = [{
+						'title':'Jinan Foreign Language School (Secondary School)',
+						'period':'2010.9 - 2016.6',
+						'location':'Jinan'
+					},{
+						'title':'Hong Kong Baptist University',
+						'period':'2016.9 - 2020.5',
+						'location':'Hong Kong'
+					}]
+					var o = document.getElementById('experiences')
+
+					allItemString = ''
+					for (i = 0; i < experiences.length; i++){
+						console.log(i)
+						itemString = experiences[i]['title'] + '<br>' + experiences[i]['period'] + '<br>' + experiences[i]['location'] + '<br><br>'
+						allItemString = allItemString + itemString
+					}
+
+					o.innerHTML = '<ul>' + allItemString + '</ul>'
+				</script>
+
 <!-- 				<ul class="actions">
 					<li><a href="#" class="button" class="table.alt">Learn More</a></li>
 				</ul> -->
@@ -33,9 +57,33 @@
 				<header class="major">
 					<h2>Hobbies and Skills</h2>
 				</header>
-				<p>Mathematics<br>Had some experience of International Mathematical Olympiad.</p>
+<!-- 				<p>Mathematics<br>Had some experience of International Mathematical Olympiad.</p>
 				<p>Lego Robot<br>Won the first prize of FLL (First Lego League) Shandong Division.</p>
-				<p>Go (圍棋)<br>Amateur four dan.</p>
+				<p>Go (圍棋)<br>Amateur four dan.</p> -->
+
+				<p id="hobbies"></p>
+				<script>
+					hobbies = [{
+						'title':'Mathematics',
+						'state':'Had some experience of International Mathematical Olympiad.',
+					},{
+						'title':'Lego Robot',
+						'state':'Won the first prize of FLL (First Lego League) Shandong Division.',
+					},{
+						'title':'Go (圍棋)',
+						'state':'Amateur four dan.'
+					}]
+					var o = document.getElementById('hobbies')
+
+					allItemString = ''
+					for (i = 0; i < hobbies.length; i++){
+						console.log(i)
+						itemString = hobbies[i]['title'] + '<br>' + hobbies[i]['state'] + '<br><br>'
+						allItemString = allItemString + itemString
+					}
+
+					o.innerHTML = '<ul>' + allItemString + '</ul>'
+				</script>
 			</section>
 
 			<section id="two">
