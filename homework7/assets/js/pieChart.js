@@ -1,5 +1,5 @@
 var width = 700;
-var height = 700;
+var height = 500;
 
 var dataset = [
     ['M-salaries tax', 22600],
