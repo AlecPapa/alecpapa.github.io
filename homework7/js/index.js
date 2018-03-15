@@ -69,17 +69,17 @@ arcs.append('text')
         if (i === 0) {
             return 'translate(' + (x + 10) + ', ' + y + ')';
         } else if (i === 1) {
-            return 'translate(' + x + ', ' + (y - 20) + ')';
+            return 'translate(' + x + ', ' + (y - 15) + ')';
         } else if (i === 2) {
             return 'translate(' + x + ', ' + (y - 5) + ')';
         } else if (i === 3) {
-            return 'translate(' + (x - 30) + ', ' + (y + 50) + ')';
+            return 'translate(' + (x - 40) + ', ' + (y + 50) + ')';
         } else if (i === 4) {
-            return 'translate(' + (x - 90) + ', ' + (y + 60) + ')';
+            return 'translate(' + (x - 105) + ', ' + (y + 60) + ')';
         } else if (i === 5) {
-            return 'translate(' + (x - 80) + ', ' + (y + 50) + ')';
+            return 'translate(' + (x - 90) + ', ' + (y + 50) + ')';
         } else if (i === 6) {
-            return 'translate(' + (x - 90) + ', ' + (y + 30) + ')';
+            return 'translate(' + (x - 110) + ', ' + (y + 30) + ')';
         } else if (i === 7) {
             return 'translate(' + x + ', ' + y + ')';
         } else if (i === 8) {
