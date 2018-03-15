@@ -27,7 +27,21 @@ var arc = d3.arc()
     .outerRadius(outerRadius)
     .innerRadius(innerRadius);
 
-var colors = d3.schemeCategory10;
+// var colors = d3.schemeCategory10;
+var colors = [
+    // Middle class
+    "#ff6600",
+    "#ff944d",
+    // Grassroots
+    "#b3ffcc",
+    "#00802b",
+    "#00cc44",
+    "#1aff66",
+    "#003311",
+    "#66ff99",
+    //Commercial world
+    "#3366ff"
+];
 
 var svg = d3.select('body')
     .append('svg')
@@ -52,13 +66,24 @@ arcs.append('text')
     .attr('transform', function(d, i) {
         var x = arc.centroid(d)[0] * 2.8;
         var y = arc.centroid(d)[1] * 2.8;
-        // if (i === 4) {
-        //     return 'translate(' + (x * 1.2) + ', ' + (y * 1.2) + ')';
-        // } else if (i === 3) {
-        //     return 'translate(' + (x - 40) + ', ' + y + ')';
-        // } else if (i === 5) {
-        //     return 'translate(' + (x + 40) + ', ' + y + ')';
-        // }
+        if (i === 0) {
+            return 'translate(' + (x + 10) + ', ' + y + ')';
+        }
+        if (i === 1) {
+            return 'translate(' + x + ', ' + (y - 5) + ')';
+        }
+        if (i === 2) {
+            return 'translate(' + x + ', ' + (y - 5) + ')';
+        }
+        if (i === 3) {
+            return 'translate(' + x + ', ' + (y + 10) + ')';
+        }
+        if (i === 4) {
+            return 'translate(' + (x - 80) + ', ' + (y + 30) + ')';
+        }
+        if (i === 0) {
+            return 'translate(' + (x + 10) + ', ' + y + ')';
+        }
         return 'translate(' + x + ', ' + y + ')';
     })
     .attr('text-anchor', 'middle')
@@ -66,7 +91,7 @@ arcs.append('text')
         var percent = Number(d.value) / d3.sum(dataset, function(d) {
             return d[1];
         }) * 100;
-        return d.data[0] + ' ' + d.data[1];
+        return d.data[0] + " " + d.data[1];
         // return d.data[0] + ' ' + percent.toFixed(1) + '%';
     })
 
