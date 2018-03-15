@@ -25,13 +25,13 @@
     var pie = d3.pie()
         .sort(null)
         .value(function(d) {
-            return d.population;
+            return d.budget;
         });
 
     context.translate(width / 2, height / 2);
 
     d3.requestTsv("data.tsv", function(d) {
-        d.population = +d.population;
+        d.budget = +d.budget;
         return d;
     }, function(error, data) {
         if (error) throw error;
