@@ -1,8 +1,8 @@
-category		budget
-salariesTax		22600
-rates			13420
-elderlyAllowence	7000
-rates2			4380
-healthCareVoucher	800
-studentGrant		740
-transportationAllowence	380
+cate	budget
+one	22600
+two	13420
+three	7000
+four	4380
+five	800
+six	740
+seven	380
