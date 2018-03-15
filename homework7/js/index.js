@@ -68,21 +68,22 @@ arcs.append('text')
         var y = arc.centroid(d)[1] * 2.8;
         if (i === 0) {
             return 'translate(' + (x + 10) + ', ' + y + ')';
-        }
-        if (i === 1) {
+        } else if (i === 1) {
+            return 'translate(' + x + ', ' + (y - 20) + ')';
+        } else if (i === 2) {
             return 'translate(' + x + ', ' + (y - 5) + ')';
-        }
-        if (i === 2) {
-            return 'translate(' + x + ', ' + (y - 5) + ')';
-        }
-        if (i === 3) {
-            return 'translate(' + x + ', ' + (y + 10) + ')';
-        }
-        if (i === 4) {
-            return 'translate(' + (x - 80) + ', ' + (y + 30) + ')';
-        }
-        if (i === 0) {
-            return 'translate(' + (x + 10) + ', ' + y + ')';
+        } else if (i === 3) {
+            return 'translate(' + (x - 30) + ', ' + (y + 50) + ')';
+        } else if (i === 4) {
+            return 'translate(' + (x - 90) + ', ' + (y + 60) + ')';
+        } else if (i === 5) {
+            return 'translate(' + (x - 80) + ', ' + (y + 50) + ')';
+        } else if (i === 6) {
+            return 'translate(' + x + ', ' + y + ')';
+        } else if (i === 7) {
+            return 'translate(' + x + ', ' + y + ')';
+        } else if (i === 8) {
+            return 'translate(' + x + ', ' + y + ')';
         }
         return 'translate(' + x + ', ' + y + ')';
     })
@@ -100,14 +101,46 @@ arcs.append('line')
     .attr('x1', function(d) { return arc.centroid(d)[0] * 2; })
     .attr('y1', function(d) { return arc.centroid(d)[1] * 2; })
     .attr('x2', function(d, i) {
-        if (i === 4) {
-            return arc.centroid(d)[0] * 3.2;
+        if (i === 0) {
+            return arc.centroid(d)[0] * 2.3;
+        } else if (i === 1) {
+            return arc.centroid(d)[0] * 2.3;
+        } else if (i === 2) {
+            return arc.centroid(d)[0] * 2.3;
+        } else if (i === 3) {
+            return arc.centroid(d)[0] * 2.5;
+        } else if (i === 4) {
+            return arc.centroid(d)[0] * 2.8;
+        } else if (i === 5) {
+            return arc.centroid(d)[0] * 2.3;
+        } else if (i === 6) {
+            return arc.centroid(d)[0] * 2.3;
+        } else if (i === 7) {
+            return arc.centroid(d)[0] * 2.3;
+        } else if (i === 8) {
+            return arc.centroid(d)[0] * 2.3;
         }
         return arc.centroid(d)[0] * 2.5;
     })
     .attr('y2', function(d, i) {
-        if (i === 4) {
-            return arc.centroid(d)[1] * 3.2;
+        if (i === 0) {
+            return arc.centroid(d)[1] * 2.3;
+        } else if (i === 1) {
+            return arc.centroid(d)[1] * 2.3;
+        } else if (i === 2) {
+            return arc.centroid(d)[1] * 2.3;
+        } else if (i === 3) {
+            return arc.centroid(d)[1] * 1.9;
+        } else if (i === 4) {
+            return arc.centroid(d)[1] * 1.95;
+        } else if (i === 5) {
+            return arc.centroid(d)[1] * 2.3;
+        } else if (i === 6) {
+            return arc.centroid(d)[1] * 2.3;
+        } else if (i === 7) {
+            return arc.centroid(d)[1] * 2.3;
+        } else if (i === 8) {
+            return arc.centroid(d)[1] * 2.3;
         }
         return arc.centroid(d)[1] * 2.5;
     });
