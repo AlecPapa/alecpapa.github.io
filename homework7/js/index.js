@@ -1,5 +1,5 @@
-var width = 600;
-var height = 600;
+var width = 700;
+var height = 700;
 
 var dataset = [
     ['M-salaries tax', 22600],
@@ -67,7 +67,7 @@ arcs.append('text')
         var x = arc.centroid(d)[0] * 2.8;
         var y = arc.centroid(d)[1] * 2.8;
         if (i === 0) {
-            return 'translate(' + (x + 10) + ', ' + y + ')';
+            return 'translate(' + (x + 20) + ', ' + y + ')';
         } else if (i === 1) {
             return 'translate(' + x + ', ' + (y - 15) + ')';
         } else if (i === 2) {
