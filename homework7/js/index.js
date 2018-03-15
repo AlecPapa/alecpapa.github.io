@@ -30,8 +30,8 @@ var arc = d3.arc()
 // var colors = d3.schemeCategory10;
 var colors = [
     // Middle class
+    "#ff8533",
     "#ff6600",
-    "#ff944d",
     // Grassroots
     "#b3ffcc",
     "#00802b",
@@ -79,11 +79,11 @@ arcs.append('text')
         } else if (i === 5) {
             return 'translate(' + (x - 80) + ', ' + (y + 50) + ')';
         } else if (i === 6) {
-            return 'translate(' + x + ', ' + y + ')';
+            return 'translate(' + (x - 90) + ', ' + (y + 30) + ')';
         } else if (i === 7) {
             return 'translate(' + x + ', ' + y + ')';
         } else if (i === 8) {
-            return 'translate(' + x + ', ' + y + ')';
+            return 'translate(' + (x + 50) + ', ' + (y + 30) + ')';
         }
         return 'translate(' + x + ', ' + y + ')';
     })
@@ -112,13 +112,13 @@ arcs.append('line')
         } else if (i === 4) {
             return arc.centroid(d)[0] * 2.8;
         } else if (i === 5) {
-            return arc.centroid(d)[0] * 2.3;
+            return arc.centroid(d)[0] * 3.1;
         } else if (i === 6) {
-            return arc.centroid(d)[0] * 2.3;
+            return arc.centroid(d)[0] * 3;
         } else if (i === 7) {
-            return arc.centroid(d)[0] * 2.3;
+            return arc.centroid(d)[0] * 2.7;
         } else if (i === 8) {
-            return arc.centroid(d)[0] * 2.3;
+            return arc.centroid(d)[0] * 2.25;
         }
         return arc.centroid(d)[0] * 2.5;
     })
@@ -134,13 +134,13 @@ arcs.append('line')
         } else if (i === 4) {
             return arc.centroid(d)[1] * 1.95;
         } else if (i === 5) {
-            return arc.centroid(d)[1] * 2.3;
+            return arc.centroid(d)[1] * 2.1;
         } else if (i === 6) {
-            return arc.centroid(d)[1] * 2.3;
+            return arc.centroid(d)[1] * 2.25;
         } else if (i === 7) {
-            return arc.centroid(d)[1] * 2.3;
+            return arc.centroid(d)[1] * 2.7;
         } else if (i === 8) {
-            return arc.centroid(d)[1] * 2.3;
+            return arc.centroid(d)[1] * 2.25;
         }
         return arc.centroid(d)[1] * 2.5;
     });
