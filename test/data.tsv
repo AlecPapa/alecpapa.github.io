@@ -1,3 +1,8 @@
-category	budget
-salariesTax	22600
-rates		13420
+category		budget
+salariesTax		22600
+rates			13420
+elderlyAllowence	7000
+rates2			4380
+healthCareVoucher	800
+studentGrant		740
+transportationAllowence	380
