@@ -1,6 +1,8 @@
 var width = 700;
 var height = 500;
 
+var padding = { top: 50, right: 50, bottom: 50, left: 50 };
+
 var dataset = [
     ['M-salaries tax', 22600],
     ['M-rates', 13420],
