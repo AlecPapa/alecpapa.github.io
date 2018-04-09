@@ -11,7 +11,22 @@
             left: 5%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        
+        section {
+            position: relative;
+            left: 5%;
+        }
     </style>
+
+    <script>
+        function mouseRollover(image) {
+
+        }
+
+        function mouseOut(image) {
+
+        }
+    </script>
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-array.v1.min.js"></script>
@@ -39,19 +54,18 @@
 
     <div id="section">
         <h2>January</h2>
-        <svg width="1000" height="100"></svg>
-        <img src="RayThomas.jpg" alt="Ray Thomas">
+        <img src="images/RayThomas.jpg" alt="Ray Thomas" border="0px" width="200px" height="300px" onmouseover="mouseRollover(this)" onmouseout="mouseOut(this)">
     </div>
 
-    <div id=" section ">
+    <div id="section">
         <h2>February</h2>
     </div>
 
-    <div id="section ">
+    <div id="section">
         <h2>March</h2>
     </div>
 
-    <div id="section ">
+    <div id="section">
         <h2>April</h2>
     </div>
 </body>
