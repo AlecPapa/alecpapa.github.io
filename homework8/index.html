@@ -38,16 +38,20 @@
     </script> -->
 
     <script>
-        function mouseRollover(image) {}
+        function mouseRollover(image) {
+            document.getElementById("img01").style.display = "block";
+        }
 
-        function mouseOut(image) {}
+        function mouseOut(image) {
+            document.getElementById("img01").style.display = "none";
+        }
     </script>
 
     <div id="section">
         <h2>January</h2>
         <div style="width: 200px; height: 300px; position: relative; left: 5%;">
-            <img src="images/RayThomas.jpg" alt="Ray Thomas" width="200px" height="300px">
-            <div style="width: 200px; height: 300px; position: absolute; top: 0%; display: none" id="img01" onmouseover="mouseRollover(this)" onmouseout="mouseOut(this)">
+            <img src="images/RayThomas.jpg" alt="Ray Thomas" width="200px" height="300px" onmouseover="mouseRollover(this)" onmouseout="mouseOut(this)">
+            <div style="width: 200px; height: 300px; position: absolute; top: 0%; display: none" id="img01">
                 <img src="images/textBox.png">
                 <div style="width: 200px; height: 300px; position: absolute; top: 10px; left: 10px">
                     Raymond Thomas (29 December 1941 – 4 January 2018) was an English musician, flautist, singer and composer in the English progressive rock band The Moody Blues. His flute solo on the band's 1967 hit single "Nights in White Satin" is regarded as one of
