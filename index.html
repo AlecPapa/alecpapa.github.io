@@ -1,218 +1,219 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Alec's CV</title>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="stylesheet" href="assets/css/main.css"/>
-	</head>
-	<body id="top">
 
-		<header id="header">
-			<div class="inner">
-				<a href="http://alecpapa.github.io/" class="image avatar"><img src="images/avatar.jpg" alt="avatar"/></a>
-				<h1><strong>I am Alec GU</strong>, who wish to be a photographer.</h1>
-				<p>My motto: To govern by doing nothing that is against nature. (無為而治)</p>
-			</div>
-		</header>
+<head>
+    <title>Alec's CV</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-		<div id="main">
+<body id="top">
 
-			<section id="one">
-				<header class="major">
-					<h2>Learning Experience</h2>
-				</header>
-<!-- 				<p id="experiences">Jinan Foreign Language School (Secondary School)<br>2010.9 - 2016.6</p>
+    <header id="header">
+        <div class="inner">
+            <a href="http://alecpapa.github.io/" class="image avatar"><img src="images/avatar.jpg" alt="avatar" /></a>
+            <h1><strong>I am Alec GU</strong>, who wish to be a photographer.</h1>
+            <p>My motto: To govern by doing nothing that is against nature. (無為而治)</p>
+        </div>
+    </header>
+
+    <div id="main">
+
+        <section id="one">
+            <header class="major">
+                <h2>Learning Experience</h2>
+            </header>
+            <!-- 				<p id="experiences">Jinan Foreign Language School (Secondary School)<br>2010.9 - 2016.6</p>
 				<p>Hong Kong Baptist University<br>Major in Data and Media Communication<br>2016.9 - 2020.5</p> -->
 
-				<p id="experiences"></p>
-				<script>
-					experiences = [{
-						'title':'Jinan Foreign Language School (Secondary School)',
-						'period':'2010.9 - 2016.6',
-						'location':'Jinan'
-					},{
-						'title':'Hong Kong Baptist University',
-						'period':'2016.9 - 2020.5',
-						'location':'Hong Kong'
-					}]
-					var o = document.getElementById('experiences')
+            <p id="experiences"></p>
+            <script>
+                experiences = [{
+                    'title': 'Jinan Foreign Language School (Secondary School)',
+                    'period': '2010.9 - 2016.6',
+                    'location': 'Jinan'
+                }, {
+                    'title': 'Hong Kong Baptist University',
+                    'period': '2016.9 - 2020.5',
+                    'location': 'Hong Kong'
+                }]
+                var o = document.getElementById('experiences')
 
-					allItemString = ''
-					for (i = 0; i < experiences.length; i++){
-						console.log(i)
-						itemString = experiences[i]['title'] + '<br>' + experiences[i]['period'] + '<br>' + experiences[i]['location'] + '<br><br>'
-						allItemString = allItemString + itemString
-					}
+                allItemString = ''
+                for (i = 0; i < experiences.length; i++) {
+                    console.log(i)
+                    itemString = experiences[i]['title'] + '<br>' + experiences[i]['period'] + '<br>' + experiences[i]['location'] + '<br><br>'
+                    allItemString = allItemString + itemString
+                }
 
-					o.innerHTML = '<ul>' + allItemString + '</ul>'
-				</script>
+                o.innerHTML = '<ul>' + allItemString + '</ul>'
+            </script>
 
-<!-- 				<ul class="actions">
+            <!-- 				<ul class="actions">
 					<li><a href="#" class="button" class="table.alt">Learn More</a></li>
 				</ul> -->
-			</section>
+        </section>
 
-			<section id="one">
-				<header class="major">
-					<h2>Hobbies and Skills</h2>
-				</header>
-<!-- 				<p>Mathematics<br>Had some experience of International Mathematical Olympiad.</p>
+        <section id="one">
+            <header class="major">
+                <h2>Hobbies and Skills</h2>
+            </header>
+            <!-- 				<p>Mathematics<br>Had some experience of International Mathematical Olympiad.</p>
 				<p>Lego Robot<br>Won the first prize of FLL (First Lego League) Shandong Division.</p>
 				<p>Go (圍棋)<br>Amateur four dan.</p> -->
 
-				<p id="hobbies"></p>
-				<script>
-					hobbies = [{
-						'title':'Mathematics',
-						'state':'Had some experience of International Mathematical Olympiad.',
-					},{
-						'title':'Lego Robot',
-						'state':'Won the first prize of FLL (First Lego League) Shandong Division.',
-					},{
-						'title':'Go (圍棋)',
-						'state':'Amateur four dan.'
-					}]
-					var o = document.getElementById('hobbies')
+            <p id="hobbies"></p>
+            <script>
+                hobbies = [{
+                    'title': 'Mathematics',
+                    'state': 'Had some experience of International Mathematical Olympiad.',
+                }, {
+                    'title': 'Lego Robot',
+                    'state': 'Won the first prize of FLL (First Lego League) Shandong Division.',
+                }, {
+                    'title': 'Go (圍棋)',
+                    'state': 'Amateur four dan.'
+                }]
+                var o = document.getElementById('hobbies')
 
-					allItemString = ''
-					for (i = 0; i < hobbies.length; i++){
-						console.log(i)
-						itemString = hobbies[i]['title'] + '<br>' + hobbies[i]['state'] + '<br><br>'
-						allItemString = allItemString + itemString
-					}
+                allItemString = ''
+                for (i = 0; i < hobbies.length; i++) {
+                    console.log(i)
+                    itemString = hobbies[i]['title'] + '<br>' + hobbies[i]['state'] + '<br><br>'
+                    allItemString = allItemString + itemString
+                }
 
-					o.innerHTML = '<ul>' + allItemString + '</ul>'
-				</script>
-			</section>
+                o.innerHTML = '<ul>' + allItemString + '</ul>'
+            </script>
+        </section>
 
-			<section id="two">
-				<h2>Recent Work</h2>
-				<div class="row">
-					<article class="6u 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC00722.jpg" class="image fit thumb"><img src="images/thumbs/DSC00722.jpg" alt="Long exposure in Central"/></a>
-						<h3>Long exposure in Central</h3>
-						<p></p>
-					</article>
-					<article class="6u$ 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC00845.jpg" class="image fit thumb"><img src="images/thumbs/DSC00845.jpg" alt="The Peninsula Hotel"/></a>
-						<h3>The Peninsula Hotel</h3>
-						<p></p>
-					</article>
-					<article class="6u 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC01590.jpg" class="image fit thumb"><img src="images/thumbs/DSC01590.jpg" alt="Two 'Pizza man' at Causeway Bay"/></a>
-						<h3>Two 'Pizza man' at Causeway Bay</h3>
-						<p></p>
-					</article>
-					<article class="6u$ 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC01839.jpg" class="image fit thumb"><img src="images/thumbs/DSC01839.jpg" alt="'The Fallen Lands'"/></a>
-						<h3>'The Fallen Lands'</h3>
-						<p></p>
-					</article>
-					<article class="6u 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC02273.jpg" class="image fit thumb"><img src="images/thumbs/DSC02273.jpg" alt="Sunset"/></a>
-						<h3>Sunset</h3>
-						<p></p>
-					</article>
-					<article class="6u$ 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC07700.jpg" class="image fit thumb"><img src="images/thumbs/DSC07700.jpg" alt="Sensō-ji's winter"/></a>
-						<h3>Sensō-ji's winter</h3>
-						<p></p>
-					</article>
-					<article class="6u 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC07701.jpg" class="image fit thumb"><img src="images/thumbs/DSC07701.jpg" alt="Flower stall"/></a>
-						<h3>Flower stall</h3>
-						<p></p>
-					</article>
-					<article class="6u$ 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC07965.jpg" class="image fit thumb"><img src="images/thumbs/DSC07965.jpg" alt="Unknown"/></a>
-						<h3>Unknown</h3>
-						<p></p>
-					</article>
-					<article class="6u 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC05103.jpg" class="image fit thumb"><img src="images/thumbs/DSC05103.jpg" alt="Leisure time"/></a>
-						<h3>Leisure time</h3>
-						<p></p>
-					</article>
-					<article class="6u$ 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC05074.jpg" class="image fit thumb"><img src="images/thumbs/DSC05074.jpg" alt="Beyond the boat"/></a>
-						<h3>Beyond the boat</h3>
-						<p></p>
-					</article>
-					<article class="6u 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC05129.jpg" class="image fit thumb"><img src="images/thumbs/DSC05129.jpg" alt="Boys"/></a>
-						<h3>Boys</h3>
-						<p></p>
-					</article>
-					<article class="6u$ 12u$(xsmall) work-item">
-						<a href="images/fulls/DSC05167.jpg" class="image fit thumb"><img src="images/thumbs/DSC05167.jpg" alt="Lanterns"/></a>
-						<h3>Lanterns</h3>
-						<p></p>
-					</article>
-				</div>
-				<ul class="actions">
-					<li><a href="#" class="button">Full Library</a></li>
-				</ul>
-			</section>
+        <section id="two">
+            <h2>Recent Work</h2>
+            <div class="row">
+                <article class="6u 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC00722.jpg" class="image fit thumb"><img src="images/thumbs/DSC00722.jpg" alt="Long exposure in Central" /></a>
+                    <h3>Long exposure in Central</h3>
+                    <p></p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC00845.jpg" class="image fit thumb"><img src="images/thumbs/DSC00845.jpg" alt="The Peninsula Hotel" /></a>
+                    <h3>The Peninsula Hotel</h3>
+                    <p></p>
+                </article>
+                <article class="6u 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC01590.jpg" class="image fit thumb"><img src="images/thumbs/DSC01590.jpg" alt="Two 'Pizza man' at Causeway Bay" /></a>
+                    <h3>Two 'Pizza man' at Causeway Bay</h3>
+                    <p></p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC01839.jpg" class="image fit thumb"><img src="images/thumbs/DSC01839.jpg" alt="'The Fallen Lands'" /></a>
+                    <h3>'The Fallen Lands'</h3>
+                    <p></p>
+                </article>
+                <article class="6u 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC02273.jpg" class="image fit thumb"><img src="images/thumbs/DSC02273.jpg" alt="Sunset" /></a>
+                    <h3>Sunset</h3>
+                    <p></p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC07700.jpg" class="image fit thumb"><img src="images/thumbs/DSC07700.jpg" alt="Sensō-ji's winter" /></a>
+                    <h3>Sensō-ji's winter</h3>
+                    <p></p>
+                </article>
+                <article class="6u 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC07701.jpg" class="image fit thumb"><img src="images/thumbs/DSC07701.jpg" alt="Flower stall" /></a>
+                    <h3>Flower stall</h3>
+                    <p></p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC07965.jpg" class="image fit thumb"><img src="images/thumbs/DSC07965.jpg" alt="Unknown" /></a>
+                    <h3>Unknown</h3>
+                    <p></p>
+                </article>
+                <article class="6u 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC05103.jpg" class="image fit thumb"><img src="images/thumbs/DSC05103.jpg" alt="Leisure time" /></a>
+                    <h3>Leisure time</h3>
+                    <p></p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC05074.jpg" class="image fit thumb"><img src="images/thumbs/DSC05074.jpg" alt="Beyond the boat" /></a>
+                    <h3>Beyond the boat</h3>
+                    <p></p>
+                </article>
+                <article class="6u 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC05129.jpg" class="image fit thumb"><img src="images/thumbs/DSC05129.jpg" alt="Boys" /></a>
+                    <h3>Boys</h3>
+                    <p></p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                    <a href="images/fulls/DSC05167.jpg" class="image fit thumb"><img src="images/thumbs/DSC05167.jpg" alt="Lanterns" /></a>
+                    <h3>Lanterns</h3>
+                    <p></p>
+                </article>
+            </div>
+            <ul class="actions">
+                <li><a href="#" class="button">Full Library</a></li>
+            </ul>
+        </section>
 
-			<section id="three">
-				<h2>Get In Touch</h2>
-				<p>You are welcome to contact me if interested.</p>
-				<div class="row">
-					<div class="8u 12u$(small)">
-						<form method="post" action="#">
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name"/></div>
-								<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email"/></div>
-								<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-							</div>
-						</form>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message"/></li>
-						</ul>
-					</div>
-					<div class="4u$ 12u$(small)">
-						<ul class="labeled-icons">
-							<li>
-								<h3 class="icon fa-home"><span class="label">Address</span></h3>
-								23 Renfrew Road, <br>
-								Kowloon Tong, <br>
-								Koeloon.
-							</li>
-							<li>
-								<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-								852-55334394
-							</li>
-							<li>
-								<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-								<a href="mailto:16250753@life.hkbu.edu.hk" target="_blank">16250753@life.hkbu.edu.hk</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+        <section id="three">
+            <h2>Get In Touch</h2>
+            <p>You are welcome to contact me if interested.</p>
+            <div class="row">
+                <div class="8u 12u$(small)">
+                    <form method="post" action="#">
+                        <div class="row uniform 50%">
+                            <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                            <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                            <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                        </div>
+                    </form>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" /></li>
+                    </ul>
+                </div>
+                <div class="4u$ 12u$(small)">
+                    <ul class="labeled-icons">
+                        <li>
+                            <h3 class="icon fa-home"><span class="label">Address</span></h3>
+                            23 Renfrew Road, <br> Kowloon Tong, <br> Koeloon.
+                        </li>
+                        <li>
+                            <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+                            852-55334394
+                        </li>
+                        <li>
+                            <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+                            <a href="mailto:16250753@life.hkbu.edu.hk" target="_blank">16250753@life.hkbu.edu.hk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-		</div>
+    </div>
 
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="https://www.instagram.com/aleekpapa/" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-					<li><a href="https://github.com/AlecPapa" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-					<li><a href="https://www.facebook.com/profile.php?id=100013401433513" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-					<li><a href="https://twitter.com/Alec14386048" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled</li>
-				</ul>
-			</div>
-		</footer>
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="https://www.instagram.com/aleekpapa/" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/AlecPapa" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100013401433513" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                <li><a href="https://twitter.com/Alec14386048" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Untitled</li>
+            </ul>
+        </div>
+    </footer>
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
