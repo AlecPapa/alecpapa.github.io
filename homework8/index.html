@@ -57,6 +57,22 @@
         function mouseOut02(image) {
             document.getElementById("img02").style.display = "none";
         }
+
+        function mouseRollover03(image) {
+            document.getElementById("img03").style.display = "block";
+        }
+
+        function mouseOut03(image) {
+            document.getElementById("img03").style.display = "none";
+        }
+
+        function mouseRollover04(image) {
+            document.getElementById("img04").style.display = "block";
+        }
+
+        function mouseOut04(image) {
+            document.getElementById("img04").style.display = "none";
+        }
     </script>
 
     <section>
@@ -96,6 +112,46 @@
             <br> Agency chief Robert Lightfoot said in a statement: "Nasa and the world have lost a pioneer."
         </div>
     </section>
+
+    <section>
+        <div class="div-inline" style="width: 200px; height: 300px; position: relative; left: 50px;" onmouseover="mouseRollover03(this)" onmouseout="mouseOut03(this)">
+            <img src="images/RegECathey.jpg" alt="Reg E Cathey" width="200px" height="300px">
+            <div style="width: 200px; height: 300px; position: absolute; top: -283px; display: none" id="img03">
+                <img src="images/textBox.png">
+                <div style="width: 200px; height: 300px; position: absolute; top: 10px; left: 10px">
+                    Reginald Eurias Cathey (August 18, 1958 – February 9, 2018) was an American actor of stage, film, and television. He was best known for his roles as Norman Wilson in The Wire, Martin Querns in Oz, Dr. Franklin Storm in the 2015 reboot of Fantastic Four,
+                    and Freddy Hayes in House of Cards.
+                </div>
+            </div>
+        </div>
+
+        <div class="div-inline" style="width: 600px; height: 300px; position: absolute; left: 300px">
+            Actor Reg E Cathey who featured in the US version of House of Cards and in The Wire passed away on February 9 at the age of 59.
+            <br> He was reported to have had lung cancer, however the cause of death has not yet been announced.
+        </div>
+    </section>
+
+    <section>
+        <div class="div-inline" style="width: 200px; height: 300px; position: relative; left: 50px;" onmouseover="mouseRollover04(this)" onmouseout="mouseOut04(this)">
+            <img src="images/StephenHawking.jpg" alt="Stephen Hawking" width="200px" height="300px">
+            <div style="width: 200px; height: 300px; position: absolute; top: -283px; display: none" id="img04">
+                <img src="images/textBox.png">
+                <div style="width: 200px; height: 300px; position: absolute; top: 10px; left: 10px">
+                    Stephen William Hawking CH CBE FRS FRSA (8 January 1942 – 14 March 2018) was an English theoretical physicist, cosmologist, author, and Director of Research at the Centre for Theoretical Cosmology within the University of Cambridge.
+                </div>
+            </div>
+        </div>
+
+        <div class="div-inline" style="width: 650px; height: 300px; position: absolute; left: 300px">
+            World renowned British physicist professor Stephen Hawking has died at the age of 76, a spokesman for his family has said.
+            <br> He passed away peacefully at his home in Cambridge in the early hours of Wednesday March 14.
+            <br> In a statement his family said: “His courage and persistence with his brilliance and humour inspired people across the world. He once said, ‘It would not be much of a universe if it wasn’t home to the people you love.’ We will miss him
+            forever.”
+            <br> He was diagnosed with a rare form of motor neurone disease in 1964 at the age of 22, and given just a few years to live.
+            <br> However he prevailed and survived to become one of the most famous scientists of the modern age.
+            <br> He was best known for his work on black holes, the mysterious infinitely dense regions of compressed matter where the normal laws of physics break down, which dominated the whole of his academic life. </div>
+    </section>
+
 </body>
 
 </html>
