@@ -42,17 +42,25 @@
     </script> -->
 
     <script>
-        function mouseRollover(image) {
+        function mouseRollover01(image) {
             document.getElementById("img01").style.display = "block";
         }
 
-        function mouseOut(image) {
+        function mouseOut01(image) {
             document.getElementById("img01").style.display = "none";
+        }
+
+        function mouseRollover02(image) {
+            document.getElementById("img02").style.display = "block";
+        }
+
+        function mouseOut02(image) {
+            document.getElementById("img02").style.display = "none";
         }
     </script>
 
     <section>
-        <div class="div-inline" style="width: 200px; height: 300px; position: relative; left: 50px;" onmouseover="mouseRollover(this)" onmouseout="mouseOut(this)">
+        <div class="div-inline" style="width: 200px; height: 300px; position: relative; left: 50px;" onmouseover="mouseRollover01(this)" onmouseout="mouseOut01(this)">
             <img src="images/RayThomas.jpg" alt="Ray Thomas" width="200px" height="300px">
             <div style="width: 200px; height: 300px; position: absolute; top: -283px; display: none" id="img01">
                 <img src="images/textBox.png">
@@ -71,21 +79,21 @@
     </section>
 
     <section>
-        <div class="div-inline" style="width: 200px; height: 300px; position: relative; left: 50px;" onmouseover="mouseRollover(this)" onmouseout="mouseOut(this)">
-            <img src="images/RayThomas.jpg" alt="Ray Thomas" width="200px" height="300px">
-            <div style="width: 200px; height: 300px; position: absolute; top: -283px; display: none" id="img01">
+        <div class="div-inline" style="width: 200px; height: 300px; position: relative; left: 50px;" onmouseover="mouseRollover02(this)" onmouseout="mouseOut02(this)">
+            <img src="images/JohnYoung.jpg" alt="John Young" width="200px" height="300px">
+            <div style="width: 200px; height: 300px; position: absolute; top: -283px; display: none" id="img02">
                 <img src="images/textBox.png">
                 <div style="width: 200px; height: 300px; position: absolute; top: 10px; left: 10px">
-                    Raymond Thomas (29 December 1941 – 4 January 2018) was an English musician, singer, founding member and composer in the English progressive rock band The Moody Blues. His flute solo on the band's 1967 hit single "Nights in White Satin" is regarded as
-                    one of prog rock's "defining moments."
+                    John Watts Young (September 24, 1930 – January 5, 2018) was an American astronaut, naval officer and aviator, test pilot, and aeronautical engineer. He became the ninth person to walk on the Moon as Commander of the Apollo 16 mission in 1972.
                 </div>
             </div>
         </div>
 
         <div class="div-inline" style="width: 600px; height: 300px; position: absolute; left: 300px">
-            Moody Blues singer Ray Thomas died suddenly at his home in Surrey on January 4 aged 76.
-            <br> He was a founding member of the Moody Blues and was best known as the group's flautist and played various instruments, including the French horn, oboe, piccolo, harmonica and saxophone.
-            <br> In 2014, it was confirmed Thomas had been diagnosed with prostate cancer.
+            Pioneer astronaut John Young died at the age of 87 at his Houston home on January 5 after battling pneumonia.
+            <br> The US astronaut flew to the moon twice and commanded the first ever space shuttle mission.
+            <br> He once famously smuggled a corned beef sandwich on to a space flight as a gift for a fellow astronaut.
+            <br> Agency chief Robert Lightfoot said in a statement: "Nasa and the world have lost a pioneer."
         </div>
     </section>
 </body>
