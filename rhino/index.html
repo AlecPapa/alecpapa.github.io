@@ -24,15 +24,21 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="https://jackrugile.com/lab/fireworks-v2/js/dat.gui.min.js"></script>
-    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="https://jackrugile.com/lab/fireworks-v2/js/dat.gui.min.js"></script>
-    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="js/dat.gui.min.js"></script>
+    <script src="js/createjs-2015.11.26.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js:1:1"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/exporting.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/echarts-gl.min.js"></script>
+    <script type="text/javascript" src="js/ecStat.min.js"></script>
+    <script type="text/javascript" src="js/dataTool.min.js"></script>
+    <script type="text/javascript" src="js/china.js"></script>
+    <script type="text/javascript" src="js/world.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+    <script type="text/javascript" src="js/bmap.min.js"></script>
+    <script type="text/javascript" src="js/simplex.js"></script>
 
 
     <!-- favicons
@@ -127,7 +133,7 @@
 
                 <div class="home-content__buttons">
                     <a href="#contact" class="smoothscroll btn btn--stroke">
-                        分享你的看法
+                        蘇丹離世-第六次物種滅絕
                     </a>
                     <!-- <a href="#about" class="smoothscroll btn btn--stroke">
                         More About Us
@@ -157,7 +163,13 @@
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h1 class="display-1 display-1--light">北部白犀概況</h1>
+                <h1 class="display-1 display-1--light">蘇丹離世</h1>
+                <p style="font-family: wt064">
+                        2018年3月20日， 世界上最後一頭北方雄性白犀牛“蘇丹”因年邁體衰和感染不治，在肯尼亞被安樂死，結束了它多災多難的一生。
+                        據外媒報道，45歲的“蘇丹”健康狀況嚴重惡化，其肌肉和骨骼已經退化，皮膚有很大的傷口，而且已經無法站立，保護區方面因此對它實施了安樂死。親眼見證一個又一個物種的滅絕讓世人驚醒，野生動物保護的話題再次被推上風口浪尖。
+
+                
+                </p>
             </div>
         </div>
         <!-- end section-header -->
@@ -169,7 +181,7 @@
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
                 <p style="font-family: wt064">
-                    北部白犀牛，是白犀牛的亞種。我們（白犀牛）是現存五種犀牛中個頭最大的，也是僅次於大象的陸生大獸。吻大而鈍，所以人們又叫我們“方吻犀”。鼻端有兩個長角，前角長約120厘米，後角長約60厘米，雌犀的角常長於雄犀。我們主要生活在非洲，棲息於平坦的灌木林。和大多數動物一樣，我們也有自己爭奪領地的方式：成年的雄性犀牛會撒尿及散布糞便的方式來標識自己的領域，在爭奪領域時，會互相用角攻擊。我們的視力很差，主要依靠聽覺和嗅覺。
+                    我們是北部白犀牛，屬於白犀牛的一個亞種，也是現存五種犀牛中個頭最大的、僅次於大象的陸生大獸。吻大而鈍，所以人們又叫我們“方吻犀”。鼻端有兩個長角，前角長約120厘米，後角長約60厘米，雌犀的角常長於雄犀。我們主要生活在非洲，棲息於平坦的灌木林。和大多數動物一樣，我們也有自己爭奪領地的方式：成年的雄性犀牛會撒尿及散布糞便的方式來標識自己的領域，在爭奪領域時，會互相用角攻擊。我們的視力很差，主要依靠聽覺和嗅覺。
                 </p>
             </div>
         </div>
@@ -297,6 +309,9 @@
             </div>
         </div>
 
+
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
         <script>
             // main svg
             var svg = d3.select("svg"),
@@ -333,7 +348,7 @@
                     return d.id.substring(0, d.id.lastIndexOf("."));
                 });
 
-            d3.csv("alecpapa.github.io/rhino/data/skillsdata.csv", row, function(error, data) {
+            d3.csv("data/skillsdata.csv", row, function(error, data) {
                 if (error) throw error;
 
                 var root = stratify(data);
@@ -485,7 +500,6 @@
                 };
             }
         </script>
-        <script src="https://d3js.org/d3.v4.min.js"></script>
     </section>
     <!-- end 犀牛的種類及現狀 -->
 
@@ -849,9 +863,11 @@
                                 }).call(this);
                             </script>
                             <div class="row">
-                                <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                                <div  data-aos="fade-up">
                                     <div class="col-full">
-                                        <h3 style="font-family: wt064">《自然》雜誌稱，50年後100多萬種陸地生物將從地球上消失。因為人類活動造成的影響，物種滅絕速度比自然滅絕速度快了1000倍，平均每小時就有壹個物種滅絕。　生物在漫長的演化過程中，長期穩定期與短期劇變期總是在相互交替，滅絕也以不同的規模出現。在穩定期內，平均新生率遠遠大於平均滅絕率，總的平均滅絕率維持在壹個低水平上，這種低水平滅絕被稱作背景滅絕；與此相對應，在劇變期，許多生物門類在短期內大量滅絕，生物演化進程突然中斷，使滅絕率突然升高，而新生率則降得很低，這種大規模的絕滅叫集群滅絕或大絕滅。</h1>
+                                        <br>
+                                        <br>
+                                        <p style="font-family: wt064">《自然》雜誌稱，50年後100多萬種陸地生物將從地球上消失。因為人類活動造成的影響，物種滅絕速度比自然滅絕速度快了1000倍，平均每小時就有壹個物種滅絕。生物在漫長的演化過程中，長期穩定期與短期劇變期總是在相互交替，滅絕也以不同的規模出現。在穩定期內，平均新生率遠遠大於平均滅絕率，總的平均滅絕率維持在壹個低水平上，這種低水平滅絕被稱作背景滅絕；與此相對應，在劇變期，許多生物門類在短期內大量滅絕，生物演化進程突然中斷，使滅絕率突然升高，而新生率則降得很低，這種大規模的絕滅叫集群滅絕或大絕滅。</p>
                                     </div>
                                 </div>
                             </div>
@@ -1017,15 +1033,7 @@
             <div class="col-full">
                 <div class="featurepage choose-us">
                     <div id="container" style="height: 600%"></div>
-                    <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
-                    <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
-                    <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
-                    <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
-                    <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
-                    <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
-                    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
-                    <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
-                    <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+                    
                     <script type="text/javascript">
                         var dom = document.getElementById("container");
                         var myChart = echarts.init(dom);
